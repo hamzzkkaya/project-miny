@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Minecraft Dark Mode GUI Palette */
+
+  /* Fonts */
+  --font-sans: "Nunito", sans-serif;
+  --font-minecraft: "Pixelify Sans", cursive;
+
+  /* Backgrounds */
+  --color-light-bg: #dddddd;
+  /* Classic Light */
+  --color-light-surface: #c6c6c6;
+  /* GUI Grey */
+
+  --color-dark-bg: #3b3b3b;
+  /* Minecraft Dark GUI Background */
+  --color-dark-surface: #1e1e1e;
+  /* Inventory Slot Background */
+
+  /* Borders & Bevels */
+  /* Light Mode Bevels */
+  --color-light-border: #ffffff;
+  --color-light-border-shadow: #555555;
+
+  /* Dark Mode Bevels */
+  --color-dark-border: #6b6b6b;
+  /* Top/Left Highlight */
+  --color-dark-border-shadow: #1f1f1f;
+  /* Bottom/Right Shadow */
+
+  /* Text */
+  --color-light-text: #202020;
+  --color-light-text-muted: #404040;
+
+  --color-dark-text: #e0e0e0;
+  --color-dark-text-muted: #a0a0a0;
+
+  /* Brand / Action */
+  --color-brand-blue: #3b82f6;
+  /* Keep blue for specific actions, or maybe Green for MC vibe? keeping blue for now */
+  --color-brand-blue-hover: #2563eb;
+
+  /* Radius - Boxy Look */
+  --radius-lg: 4px;
+  --radius-xl: 6px;
+  --radius-2xl: 8px;
+  /* Max roundness is very small */
+
+  --border-width-2: 2px;
+}
+
+@layer base {
+  body {
+    @apply antialiased transition-colors duration-300 font-sans;
+    @apply bg-light-bg text-light-text dark:bg-dark-bg dark:text-dark-text;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-minecraft {
+    font-family: var(--font-minecraft);
+  }
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-size: 50px 50px;
+    background-image: linear-gradient(to right, rgba(100, 116, 139, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(100, 116, 139, 0.04) 1px, transparent 1px);
+  }
+
+  .dark .bg-grid-pattern {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  }
+}
