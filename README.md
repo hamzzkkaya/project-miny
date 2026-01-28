@@ -36,7 +36,7 @@ Bu proje **BUN** runtime üzerine kuruludur. Node.js kullanıyorsanız da çalı
 
 ### 1. Projeyi Klonlayın
 ```bash
-git clone https://github.com/wolfk/project-miny.git
+git clone https://github.com/hamzzkkaya/project-miny.git
 cd project-miny
 ```
 
