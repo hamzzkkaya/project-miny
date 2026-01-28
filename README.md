@@ -82,4 +82,4 @@ src/
 Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır. Özgürce çatallayabilir, değiştirebilir ve kullanabilirsiniz.
 
 ---
-*Developed with ❤️ by WolfK & Miny Team*
+*Developed with ❤️ by hamzzkkaya*
